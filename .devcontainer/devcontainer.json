@@ -6,8 +6,11 @@
   ],
   "service": "app",
   "workspaceFolder": "/app",
-  "extensions": [],
+  "extensions": [
+    "KoichiSasada.vscode-rdbg"
+  ],
   "settings": {
     "editor.tabSize": 2
-  }
+  },
+  "postStartCommand": "bundle install"
 }

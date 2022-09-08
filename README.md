@@ -1,24 +1,13 @@
-# README
+# Dev Container + Rails + vscode-rdbg (debug.gem)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+設定済みの Rails + [vscode-rdbg](https://github.com/ruby/vscode-rdbg)([debug.gem](https://github.com/ruby/debug)) 環境を [Dev Container](https://code.visualstudio.com/docs/remote/containers) で提供する実験です。
 
-Things you may want to cover:
+![debug-demo](https://user-images.githubusercontent.com/60980/189170864-f443cb07-99d5-4ac1-978b-7d7f0b163e83.gif)
 
-* Ruby version
+## 試し方
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Visual Studio Code Remote - Containers エクステンションをインストール
+2. rails-debug-sample フォルダーを開く
+3. Reopen in Container
+4. bundle exec rails setup
+5. 実行 > デバッグの開始
