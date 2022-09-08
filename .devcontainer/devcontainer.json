@@ -1,0 +1,13 @@
+{
+  "name": "rails-debug-sample",
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+    "docker-compose.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "extensions": [],
+  "settings": {
+    "editor.tabSize": 2
+  }
+}

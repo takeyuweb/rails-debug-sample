@@ -1,0 +1,22 @@
+version: "3"
+volumes:
+  bundle-data:
+services:
+  app:
+    build:
+      context: ./docker-compose/app
+      dockerfile: Dockerfile.dev
+      args:
+        DIR: /app
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+        BUNDLE_PATH: ${BUNDLE_PATH:-/app/vendor/bundle}
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+      - bundle-data:/app/vendor/bundle
+    command: >
+      /bin/sh -c "bundle exec bin/dev"
+    ports:
+      - 3000:3000
