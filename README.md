@@ -11,3 +11,7 @@
 3. Reopen in Container
 4. bundle exec rails setup
 5. 実行 > デバッグの開始
+
+## 設定について
+
+https://github.com/takeyuweb/rails-debug-sample/commit/a4db68db7cef50be30b53649df69b15d6157e011
