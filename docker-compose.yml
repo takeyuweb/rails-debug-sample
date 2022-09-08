@@ -18,5 +18,8 @@ services:
       - bundle-data:/app/vendor/bundle
     command: >
       /bin/sh -c "bundle exec bin/dev"
+    environment:
+      BINDING: 0.0.0.0
+      PORT: 3000
     ports:
       - 3000:3000
